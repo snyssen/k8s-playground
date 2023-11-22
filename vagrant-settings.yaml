@@ -1,0 +1,23 @@
+# cluster_name is used to group the nodes in a folder within VirtualBox:
+cluster_name: CKA k8s cluster
+network:
+  # Worker IPs are simply incremented from the control IP.
+  control_ip: 192.168.56.20
+  pod_cidr: 172.16.1.0/16
+  service_cidr: 172.17.1.0/18
+nodes:
+  control:
+    name: c1-cp1
+    cpu: 2
+    memory: 4096
+    disksize: 70GB
+  workers:
+    count: 3
+    # name gets appended the worker number, counting from 1
+    name: c1-node
+    cpu: 1
+    memory: 4096
+    disksize: 70GB
+provisioning:
+  enable: false # whether the k8s cluster gets created or no. Set to false to learn how to set it up yourself.
+  kubernetes_version: 1.27.1-00
