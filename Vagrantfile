@@ -35,4 +35,10 @@ Vagrant.configure("2") do |config|
       node.vm.network :private_network, ip: "192.168.56.2#{i}"
     end
   end
+
+  # Run initial upgrade on provisioning and reboot so we have the machine ready to go
+  config.vm.provision "shell", inline: <<-SHELL
+    export DEBIAN_FRONTEND=noninteractive
+    sudo apt update && sudo apt upgrade -y && sudo reboot
+  SHELL
 end
