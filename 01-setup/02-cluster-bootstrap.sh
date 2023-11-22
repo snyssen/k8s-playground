@@ -13,9 +13,9 @@ vagrant ssh c1-cp1
 wget https://raw.githubusercontent.com/projectcalico/calico/master/manifests/calico.yaml
 # Check that the default IPV4 pool won't collide with your underlying network
 grep -A 1 "CALICO_IPV4POOL_CIDR" calico.yaml
-# If needed, update the value (not needed in my case):
-# sed -i 's/            # - name: CALICO_IPV4POOL_CIDR/             - name: CALICO_IPV4POOL_CIDR/' calico.yaml
-# sed -i 's/            #   value: "192.168.0.0/16"/               value: "<your_CIDR>"/' calico.yaml
+# If needed, update the value:
+sed -i 's/            # - name: CALICO_IPV4POOL_CIDR/             - name: CALICO_IPV4POOL_CIDR/' calico.yaml
+sed -i 's|            #   value: "192.168.0.0/16"|               value: "192.168.0.0/32"|' calico.yaml
 
 ## Bootstrap cluster
 # A specific k8s version can optionnally be declared here by using '--kubernetes-version v1.26.0'
