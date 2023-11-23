@@ -39,6 +39,8 @@ Vagrant.configure("2") do |config|
     if settings["provisioning"]["enabled"]
       control.vm.provision "shell",
         path: "provisioning/common.sh"
+      control.vm.provision "shell",
+        path: "provisioning/control.sh"
     end
   end
 
