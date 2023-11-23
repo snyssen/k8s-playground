@@ -35,6 +35,11 @@ Vagrant.configure("2") do |config|
       end
     end
     control.vm.disk :disk, size: settings["nodes"]["control"]["disksize"], primary: true
+
+    if settings["provisioning"]["enabled"]
+      control.vm.provision "shell",
+        path: "provisioning/common.sh"
+    end
   end
 
   (1..NUM_WORKER_NODES).each do |i|
@@ -49,11 +54,16 @@ Vagrant.configure("2") do |config|
         end
       end
       node.vm.disk :disk, size: settings["nodes"]["workers"]["disksize"], primary: true
+
+      if settings["provisioning"]["enabled"]
+        node.vm.provision "shell",
+          path: "provisioning/common.sh"
+      end
     end
   end
 
-  config.vm.provision "shell", inline: <<-SHELL
+  config.vm.provision "shell", reboot: true, inline: <<-SHELL
     export DEBIAN_FRONTEND=noninteractive
-    sudo apt-get update && sudo apt-get upgrade -y && sudo reboot
+    apt-get update && apt-get upgrade -y
   SHELL
 end

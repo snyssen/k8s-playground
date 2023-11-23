@@ -19,5 +19,5 @@ nodes:
     memory: 4096
     disksize: 70GB
 provisioning:
-  enable: false # whether the k8s cluster gets created or no. Set to false to learn how to set it up yourself.
+  enabled: true # whether the k8s cluster gets created or no. Set to false to learn how to set it up yourself.
   kubernetes_version: 1.27.1-00
