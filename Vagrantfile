@@ -60,6 +60,8 @@ Vagrant.configure("2") do |config|
       if settings["provisioning"]["enabled"]
         node.vm.provision "shell",
           path: "provisioning/common.sh"
+        node.vm.provision "shell",
+          path: "provisioning/worker.sh"
       end
     end
   end
