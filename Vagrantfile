@@ -38,9 +38,13 @@ Vagrant.configure("2") do |config|
 
     if settings["provisioning"]["enabled"]
       control.vm.provision "shell",
-        path: "provisioning/common.sh"
-      control.vm.provision "shell",
-        path: "provisioning/control.sh"
+        path: "provisioning/control.sh",
+        env: {
+          "CONTROL_IP" => settings["network"]["control_ip"],
+          "POD_CIDR" => settings["network"]["pod_cidr"],
+          "SERVICE_CIDR" => settings["network"]["service_cidr"],
+          "CALICO_VERSION" => settings["provisioning"]["calico_version"]
+        }
     end
   end
 
@@ -59,8 +63,6 @@ Vagrant.configure("2") do |config|
 
       if settings["provisioning"]["enabled"]
         node.vm.provision "shell",
-          path: "provisioning/common.sh"
-        node.vm.provision "shell",
           path: "provisioning/worker.sh"
       end
     end
@@ -70,4 +72,11 @@ Vagrant.configure("2") do |config|
     export DEBIAN_FRONTEND=noninteractive
     apt-get update && apt-get upgrade -y
   SHELL
+  if settings["provisioning"]["enabled"]
+    config.vm.provision "shell",
+      path: "provisioning/common.sh",
+      env: {
+        "KUBERNETES_VERSION" => settings["provisioning"]["kubernetes_version"]
+      }
+  end
 end

@@ -2,8 +2,11 @@
 
 set -euxo pipefail
 
-# TODO: use IP address and CIDRs from settings
-sudo kubeadm init --apiserver-advertise-address=192.168.56.20 --apiserver-cert-extra-sans=192.168.56.20 --pod-network-cidr=172.16.1.0/16 --service-cidr=172.17.1.0/18
+sudo kubeadm init \
+    --apiserver-advertise-address="$CONTROL_IP" \
+    --apiserver-cert-extra-sans="$CONTROL_IP" \
+    --pod-network-cidr="$POD_CIDR" \
+    --service-cidr="$SERVICE_CIDR"
 
 # Copy config for root
 mkdir -p "$HOME"/.kube
@@ -30,6 +33,5 @@ touch $config_path/join.sh
 chmod +x $config_path/join.sh
 kubeadm token create --print-join-command > $config_path/join.sh
 
-# TODO: use version from settings
-curl https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml -O
+curl "https://raw.githubusercontent.com/projectcalico/calico/v$CALICO_VERSION/manifests/calico.yaml" -O
 kubectl apply -f calico.yaml

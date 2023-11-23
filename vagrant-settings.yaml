@@ -20,5 +20,5 @@ nodes:
     disksize: 70GB
 provisioning:
   enabled: true # whether the k8s cluster gets created or no. Set to false to learn how to set it up yourself.
-  kubernetes_version: 1.27.1-00
+  kubernetes_version: 1.26 # only major.minor is supported. The script will always install the latest patch from the selected minor version
   calico_version: 3.26.0
