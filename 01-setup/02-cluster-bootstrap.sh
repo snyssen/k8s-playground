@@ -1,4 +1,5 @@
 #! /usr/bin/bash
+# shellcheck disable=SC2317
 
 ## SSH into control plane node
 vagrant ssh c1-cp1
