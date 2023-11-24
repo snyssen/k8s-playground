@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "89fffe16e2a7c8f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "ea8bc352afcbaaab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e3e7f50b5be19d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e9a593a544bcb749",
+    "type": "split",
+    "children": [
+      {
+        "id": "f56f14d634e8b257",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2bbe7b59db6df739",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d0dacf1d8125cfed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9272e164a2409cc9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 412.5
+  },
+  "right": {
+    "id": "0dfc57c5d5278927",
+    "type": "split",
+    "children": [
+      {
+        "id": "377653dd7d497b50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3ac887270d57e47",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Sources.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9cc4d5c6dedf3618",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sources.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4edaee12d74dbafa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "abf8611137f2a9e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Sources.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0e3e7f50b5be19d6",
+  "lastOpenFiles": [
+    "README.md",
+    "02 - Working with Kubernetes/01 - Exploring Kubectl.md",
+    "01-setup/00 - Installing and Configuring Kubernetes.md",
+    "01-setup/attachments/Pasted image 20231114155044.png",
+    "01-setup/attachments",
+    "02 - Working with Kubernetes",
+    "00-theory/00 - OSI model and the 7 layers of networking.md",
+    "00-theory/01 - Exploring the Kubernetes Architecture.md",
+    "00-theory",
+    "kubernetes-installation-configuration-fundamentals/04/demos/2-deployingapplications.sh",
+    "kubernetes-installation-configuration-fundamentals/04/demos/1-workingwithyourcluster.sh",
+    "kubernetes-installation-configuration-fundamentals/04/working-with-your-kubernetes-cluster-slides.pdf",
+    "kubernetes-installation-configuration-fundamentals/04/demos",
+    "kubernetes-installation-configuration-fundamentals/04",
+    "kubernetes-installation-configuration-fundamentals/03/demos/4-CreateGKECluster.sh",
+    "kubernetes-installation-configuration-fundamentals/03/demos/3-CreateAKSCluster.sh",
+    "01-setup/attachments/Pasted image 20231115182157.png",
+    "01-setup/attachments/Pasted image 20231115181227.png",
+    "01-setup/attachments/Pasted image 20231115180845.png",
+    "01-setup/attachments/Pasted image 20231115180751.png",
+    "01-setup/attachments/Pasted image 20231115174036.png",
+    "01-setup/attachments/Pasted image 20231115143730.png",
+    "01-setup/attachments/Pasted image 20231115143126.png",
+    "01-setup/attachments/Pasted image 20231114155303.png",
+    "00-theory/attachments/Pasted image 20231114135956.png",
+    "Sources.md"
+  ]
+}
