@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Working with Kubernetes/01 - Exploring Kubectl.md",
+                "file": "02-Working with Kubernetes/01 - Exploring Kubectl.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 - Working with Kubernetes/01 - Exploring Kubectl.md",
+                "file": "02-Working with Kubernetes/01 - Exploring Kubectl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 - Working with Kubernetes/01 - Exploring Kubectl.md",
+                "file": "02-Working with Kubernetes/01 - Exploring Kubectl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Working with Kubernetes/01 - Exploring Kubectl.md"
+                "file": "02-Working with Kubernetes/01 - Exploring Kubectl.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "0e3e7f50b5be19d6",
   "lastOpenFiles": [
-    "02 - Working with Kubernetes/attachments/Pasted image 20231124084810.png",
-    "02 - Working with Kubernetes/attachments",
+    "02-Working with Kubernetes/attachments/Pasted image 20231124084810.png",
+    "04-Managing Objects with Labels, Annotations, and Namespaces",
+    "02-Working with Kubernetes/attachments",
     "Sources.md",
     "README.md",
     "02 - Working with Kubernetes/01 - Exploring Kubectl.md",
@@ -165,7 +166,6 @@
     "kubernetes-installation-configuration-fundamentals/04/working-with-your-kubernetes-cluster-slides.pdf",
     "kubernetes-installation-configuration-fundamentals/04/demos",
     "kubernetes-installation-configuration-fundamentals/04",
-    "kubernetes-installation-configuration-fundamentals/03/demos/4-CreateGKECluster.sh",
     "01-setup/attachments/Pasted image 20231115182157.png",
     "01-setup/attachments/Pasted image 20231115181227.png",
     "01-setup/attachments/Pasted image 20231115180845.png",
@@ -173,7 +173,6 @@
     "01-setup/attachments/Pasted image 20231115174036.png",
     "01-setup/attachments/Pasted image 20231115143730.png",
     "01-setup/attachments/Pasted image 20231115143126.png",
-    "01-setup/attachments/Pasted image 20231114155303.png",
-    "00-theory/attachments/Pasted image 20231114135956.png"
+    "01-setup/attachments/Pasted image 20231114155303.png"
   ]
 }
