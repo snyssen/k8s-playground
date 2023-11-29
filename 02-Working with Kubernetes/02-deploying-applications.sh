@@ -57,7 +57,7 @@ exit
 
 ## Expose the deployment
 # --port is the port through which other resources can connect to the service
-# --target-port is 
+# --target-port is the port on the pod that is targeted by the service
 kubectl expose deployment hello-world --port 80 --target-port 8080
 # If both the port and target ports are kept the same, the above can be simplified to
 # kubectl expose deployment hello-world --port 80
