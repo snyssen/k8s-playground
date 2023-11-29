@@ -14,5 +14,5 @@ Here is what the API server is doing when creating a deployment:
 4. The *scheduler* is watching *etcd* for pods that haven't been assigned to nodes yet. When it does find some, it will schedule them, i.e. it will assign them a node they should run on. It will update their definition and write it back into *etcd*. **At this point, not pod has started yet**.
 5. The *Kubelet* on each node is constantly asking the *API Server* about work it needs to do. The *API Server* thus now responds with the newly created pod that have been assigned to the node asking it for work.
 6. Once the *Kubelet* receives the pod definitions, it will send a message to the *container runtime* (on the same node) to pull down the container images specified on the pod spec, and to start the pod on the node. If the pod is part of a service, then the *kube-proxy* on the node is also updated to be able to route requests to the pod.
-
+![[Pasted image 20231124084810.png]]
 This workflow is for a deployment, and may differ slightly for other definitions.

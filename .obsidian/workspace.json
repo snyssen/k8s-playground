@@ -148,6 +148,8 @@
   },
   "active": "0e3e7f50b5be19d6",
   "lastOpenFiles": [
+    "02 - Working with Kubernetes/attachments/Pasted image 20231124084810.png",
+    "02 - Working with Kubernetes/attachments",
     "Sources.md",
     "README.md",
     "02 - Working with Kubernetes/01 - Exploring Kubectl.md",
@@ -164,7 +166,6 @@
     "kubernetes-installation-configuration-fundamentals/04/demos",
     "kubernetes-installation-configuration-fundamentals/04",
     "kubernetes-installation-configuration-fundamentals/03/demos/4-CreateGKECluster.sh",
-    "kubernetes-installation-configuration-fundamentals/03/demos/3-CreateAKSCluster.sh",
     "01-setup/attachments/Pasted image 20231115182157.png",
     "01-setup/attachments/Pasted image 20231115181227.png",
     "01-setup/attachments/Pasted image 20231115180845.png",
