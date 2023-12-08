@@ -30,3 +30,18 @@ k get po -L custom-label
 k delete po -l app=hello-world
 k get po --show-labels
 # Output: no more labels!
+k delete all --all
+
+# All resources can get labels, including nodes
+k get nodes --show-labels
+k label node c1-node2 disk=local_ssd
+k label node c1-node3 hardware=local_gpu
+k get node -L disk,hardware
+k apply -f 02-demo-node-selector.yaml
+# Observe that pods are scheduled onto nodes with matching labels
+k get node -L disk,hardware
+k get po -o wide
+# Remove node labels and cleanup
+k label node c1-node2 disk-
+k label node c1-node3 hardware-
+k delete all --all
