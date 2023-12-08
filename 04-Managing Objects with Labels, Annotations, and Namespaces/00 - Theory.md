@@ -30,3 +30,19 @@ Examples of resources filtering using labels:
 
 Example use case of labels and selectors: the relation between deployments, pods, and services.
 ![[Pasted image 20231207154659.png]]
+
+# Annotations
+- Are used to add additional information on resources
+- Mostly used by people or tooling to make decisions
+- Usually contains informations such as:
+	- build number
+	- release version
+	- image information
+	- Team responsible
+- Are non-hierarchical key/value pair
+- Cannot be used to query resources => used for other purposes (provide additional data when we already have the resource queried)
+- Keys must be less than 64 chars long
+- Values can be up to 256KB in lentgh
+
+# Summary
+![[Pasted image 20231208083127.png]]
