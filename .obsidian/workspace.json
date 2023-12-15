@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-Managing Objects with Labels, Annotations, and Namespaces/00 - Theory.md",
+                "file": "05-Running and managing pods/00 - Theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 412.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0dfc57c5d5278927",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-Managing Objects with Labels, Annotations, and Namespaces/00 - Theory.md",
+                "file": "05-Running and managing pods/00 - Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-Managing Objects with Labels, Annotations, and Namespaces/00 - Theory.md",
+                "file": "05-Running and managing pods/00 - Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-Managing Objects with Labels, Annotations, and Namespaces/00 - Theory.md"
+                "file": "05-Running and managing pods/00 - Theory.md"
               }
             }
           }
@@ -148,6 +149,9 @@
   },
   "active": "0e3e7f50b5be19d6",
   "lastOpenFiles": [
+    "05-Running and managing pods/attachments/Pasted image 20231213094652.png",
+    "05-Running and managing pods/attachments",
+    "04-Managing Objects with Labels, Annotations, and Namespaces/00 - Theory.md",
     "05-Running and managing pods/01-multicontainer-pods.sh",
     "05-Running and managing pods/01-multicontainer-pod.yaml",
     "05-Running and managing pods/00 - Theory.md",
@@ -158,7 +162,6 @@
     "04-Managing Objects with Labels, Annotations, and Namespaces/attachments/Pasted image 20231207154659.png",
     "04-Managing Objects with Labels, Annotations, and Namespaces/attachments/Pasted image 20231207153735.png",
     "00-theory/00 - OSI model and the 7 layers of networking.md",
-    "04-Managing Objects with Labels, Annotations, and Namespaces/00 - Theory.md",
     "04-Managing Objects with Labels, Annotations, and Namespaces/attachments/Pasted image 20231129135628.png",
     "04-Managing Objects with Labels, Annotations, and Namespaces/attachments",
     "04-Managing Objects with Labels, Annotations, and Namespaces/attachments/Pasted image 20231129134329.png",
@@ -172,9 +175,7 @@
     "01-setup/00 - Installing and Configuring Kubernetes.md",
     "01-setup/attachments/Pasted image 20231114155044.png",
     "01-setup/attachments",
-    "02 - Working with Kubernetes",
     "00-theory/01 - Exploring the Kubernetes Architecture.md",
-    "00-theory",
     "01-setup/attachments/Pasted image 20231115182157.png",
     "01-setup/attachments/Pasted image 20231115181227.png",
     "01-setup/attachments/Pasted image 20231115180845.png"
