@@ -22,3 +22,26 @@ k describe deployment hello-world
 # Get ReplicaSets and notice the the old one is still present, with desired set to 0
 k get replicasets
 
+# Set deployment deadline to 10 sec for demonstration, so we don't have to wait
+k patch deployment hello-world -p '{"spec":{"progressDeadlineSeconds": 10}}'
+# Then apply wrong update
+k set image deployment hello-world hello-app=psk8s.azurecr.io/hello-app:2.9.9
+k rollout status deployment hello-world
+# Notice return status of 1
+echo "$?"
+# Notice that pods are failing because of the invalid image
+# Also notice that there are still 8 functional pods on the 10 original because maxUnavailable is set to 25%
+# Also notice that there are 13 pods in total because maxSurge is ar 25% (3 being 25% of 10 rounded up)
+k get po
+
+# We can check the rollout history
+# The "CHANGE-CAUSE" column is left emptyu because we didn't specify the --record flag
+k rollout history deployment hello-world
+# We can get the changes of each revision
+k rollout history deployment hello-world --revision=2
+k rollout history deployment hello-world --revision=3
+# Finally, we can rollback to a previous revision
+k rollout undo deployment hello-world --to-revision=2
+k rollout status deployment hello-world
+# Check that we are back in normal conditions
+k get po
